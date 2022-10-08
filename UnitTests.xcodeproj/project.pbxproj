@@ -17,6 +17,8 @@
 		CE37D32D28EF9529002F68FB /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE37D32C28EF9529002F68FB /* Service.swift */; };
 		CE37D33028EF9720002F68FB /* PresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE37D32F28EF9720002F68FB /* PresenterTests.swift */; };
 		CE37D33328EF9AAE002F68FB /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE37D33228EF9AAE002F68FB /* Factory.swift */; };
+		CE37D34828F1DE1A002F68FB /* AlertPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE37D34728F1DE1A002F68FB /* AlertPresentable.swift */; };
+		CE37D34B28F1DF53002F68FB /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE37D34A28F1DF53002F68FB /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,8 @@
 		CE37D32C28EF9529002F68FB /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		CE37D32F28EF9720002F68FB /* PresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterTests.swift; sourceTree = "<group>"; };
 		CE37D33228EF9AAE002F68FB /* Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factory.swift; sourceTree = "<group>"; };
+		CE37D34728F1DE1A002F68FB /* AlertPresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPresentable.swift; sourceTree = "<group>"; };
+		CE37D34A28F1DF53002F68FB /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +88,8 @@
 		CE37D30528EF943A002F68FB /* UnitTests */ = {
 			isa = PBXGroup;
 			children = (
+				CE37D34928F1DF4D002F68FB /* Model */,
+				CE37D34628F1DE05002F68FB /* AlertPresentable */,
 				CE37D33128EF9AA7002F68FB /* Factory */,
 				CE37D32B28EF9521002F68FB /* Service */,
 				CE37D32828EF946E002F68FB /* Presenter */,
@@ -144,6 +150,22 @@
 				CE37D33228EF9AAE002F68FB /* Factory.swift */,
 			);
 			path = Factory;
+			sourceTree = "<group>";
+		};
+		CE37D34628F1DE05002F68FB /* AlertPresentable */ = {
+			isa = PBXGroup;
+			children = (
+				CE37D34728F1DE1A002F68FB /* AlertPresentable.swift */,
+			);
+			path = AlertPresentable;
+			sourceTree = "<group>";
+		};
+		CE37D34928F1DF4D002F68FB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE37D34A28F1DF53002F68FB /* Model.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,12 +268,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE37D34828F1DE1A002F68FB /* AlertPresentable.swift in Sources */,
 				CE37D30B28EF943A002F68FB /* ViewController.swift in Sources */,
 				CE37D30728EF943A002F68FB /* AppDelegate.swift in Sources */,
 				CE37D33328EF9AAE002F68FB /* Factory.swift in Sources */,
 				CE37D32D28EF9529002F68FB /* Service.swift in Sources */,
 				CE37D32A28EF94D4002F68FB /* Presenter.swift in Sources */,
 				CE37D30928EF943A002F68FB /* SceneDelegate.swift in Sources */,
+				CE37D34B28F1DF53002F68FB /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

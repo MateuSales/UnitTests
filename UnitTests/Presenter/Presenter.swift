@@ -6,7 +6,7 @@ protocol PresenterDelegate: AnyObject {
     func display(_ name: String)
     func showLoading()
     func hideLoading()
-    func showError()
+    func showError(title: String, message: String)
 }
 
 final class Presenter: Presenting {
@@ -25,7 +25,10 @@ final class Presenter: Presenting {
             case let .success(model):
                 self?.delegate?.display(model.name)
             case .failure:
-                self?.delegate?.showError()
+                self?.delegate?.showError(
+                    title: "Tivemos um erro :(",
+                    message: "Tente novamente mais tarde."
+                )
             }
         }
     }

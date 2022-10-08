@@ -5,11 +5,13 @@ final class PresenterTests: XCTestCase {
 
     func test_loadInitialState_whenRequestFails_shouldCallDelegateCorrectly() {
         let (sut, doubles) = makeSUT()
+        let expectedTitle = "Tivemos um erro :("
+        let expectedMessage = "Tente novamente mais tarde."
         
         sut.loadInitialState()
         doubles.serviceSpy.complete(with: .failure(.someError))
         
-        XCTAssertEqual(doubles.delegateSpy.receivedMessages, [.showLoading, .hideLoading, .showError])
+        XCTAssertEqual(doubles.delegateSpy.receivedMessages, [.showLoading, .hideLoading, .showError(expectedTitle, expectedMessage)])
     }
     
     func test_loadInitialState_whenRequestIsSuccess_shouldCallDelegateCorrectly() {
@@ -57,12 +59,12 @@ final class PresenterTests: XCTestCase {
             case display(String)
             case showLoading
             case hideLoading
-            case showError
+            case showError(String, String)
             
             var description: String {
                 switch self {
-                case .showError:
-                    return "showError"
+                case let .showError(title, message):
+                    return "showError - \(title) - \(message)"
                 case .display(let name):
                     return "display - \(name)"
                 case .showLoading:
@@ -86,9 +88,9 @@ final class PresenterTests: XCTestCase {
         func hideLoading() {
             receivedMessages.append(.hideLoading)
         }
-        
-        func showError() {
-            receivedMessages.append(.showError)
+                
+        func showError(title: String, message: String) {
+            receivedMessages.append(.showError(title, message))
         }
     }
 }

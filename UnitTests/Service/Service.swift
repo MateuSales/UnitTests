@@ -1,11 +1,8 @@
-struct Model {
-    let name: String
-}
+import Foundation
 
 enum CustomError: Error {
     case someError
 }
-
 
 protocol Servicing {
     func getData(completion: @escaping (Result<Model, CustomError>) -> Void)
@@ -13,6 +10,8 @@ protocol Servicing {
 
 final class Service: Servicing {
     func getData(completion: @escaping (Result<Model, CustomError>) -> Void) {
-        // URL Session / Alamofire ou qualquer outra coisa
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+            completion(.success(.init(name: "Mateus Sales")))
+        }
     }
 }
