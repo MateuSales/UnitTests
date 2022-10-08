@@ -12,7 +12,6 @@
 		CE37D30B28EF943A002F68FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE37D30A28EF943A002F68FB /* ViewController.swift */; };
 		CE37D31028EF943C002F68FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE37D30F28EF943C002F68FB /* Assets.xcassets */; };
 		CE37D31328EF943C002F68FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE37D31128EF943C002F68FB /* LaunchScreen.storyboard */; };
-		CE37D32128EF945D002F68FB /* UnitTestsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE37D32028EF945D002F68FB /* UnitTestsTests.swift */; };
 		CE37D32A28EF94D4002F68FB /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE37D32928EF94D4002F68FB /* Presenter.swift */; };
 		CE37D32D28EF9529002F68FB /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE37D32C28EF9529002F68FB /* Service.swift */; };
 		CE37D33028EF9720002F68FB /* PresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE37D32F28EF9720002F68FB /* PresenterTests.swift */; };
@@ -40,7 +39,6 @@
 		CE37D31228EF943C002F68FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE37D31428EF943C002F68FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE37D31E28EF945D002F68FB /* UnitTestsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTestsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE37D32028EF945D002F68FB /* UnitTestsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTestsTests.swift; sourceTree = "<group>"; };
 		CE37D32928EF94D4002F68FB /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 		CE37D32C28EF9529002F68FB /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		CE37D32F28EF9720002F68FB /* PresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterTests.swift; sourceTree = "<group>"; };
@@ -107,7 +105,6 @@
 			isa = PBXGroup;
 			children = (
 				CE37D32E28EF9712002F68FB /* Presenter */,
-				CE37D32028EF945D002F68FB /* UnitTestsTests.swift */,
 			);
 			path = UnitTestsTests;
 			sourceTree = "<group>";
@@ -284,7 +281,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE37D33028EF9720002F68FB /* PresenterTests.swift in Sources */,
-				CE37D32128EF945D002F68FB /* UnitTestsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
