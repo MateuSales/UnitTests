@@ -9,7 +9,7 @@ import UIKit
 
 final class ViewController: UIViewController, AlertPresentable {
     private let activityIndicator: UIActivityIndicatorView = {
-        let view = UIActivityIndicatorView(style: .large)
+        let view = UIActivityIndicatorView(style: .medium)
         view.translatesAutoresizingMaskIntoConstraints = false
         view.tintColor = .darkGray
         return view
