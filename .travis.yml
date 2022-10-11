@@ -1,4 +1,4 @@
 language: swift
 xcode_project: UnitTests.xcodeproj
 xcode_scheme: UnitTests
-xcode_destination: platform=iOS Simulator,OS=15.5,name=iPhone 11
+xcode_destination: platform=iOS Simulator,OS=11.3,name=iPhone X
