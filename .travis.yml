@@ -1,4 +1,4 @@
-os: osx
-osx_image: xcode13.4
 language: swift
-script: xcodebuild clean build test -project UnitTests.xcodeproj -scheme "UnitTests" -destination 'platform=iOS Simulator, OS=latest, name=iPhone 11' CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
+xcode_project: UnitTests.xcodeproj
+xcode_scheme: UnitTests
+xcode_destination: platform=iOS Simulator,OS=15.5,name=iPhone 11
