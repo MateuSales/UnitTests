@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class ViewController: UIViewController, AlertPresentable {
+class ViewController: UIViewController, AlertPresentable {
     private let activityIndicator: UIActivityIndicatorView = {
         let view = UIActivityIndicatorView(style: .large)
         view.translatesAutoresizingMaskIntoConstraints = false
